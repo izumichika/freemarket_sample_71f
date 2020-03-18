@@ -27,7 +27,7 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |nickname|string|null: false|
-|email|string|unique: true|
+|email|string|null: false,unique: true|
 |pass|string|null: false, length: { minimum: 7 }|
 |birthday|string|null: false|
 |last_name|string|null: false|

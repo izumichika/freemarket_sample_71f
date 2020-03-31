@@ -49,7 +49,8 @@
                   = @item.user
                 .right2
                   = @categories.name
-                  = @item.parent.name
+                  = @item.category.parent.name
+                  = @item.category.children.name
                 .right3
                   = @item.brand
                 .right4

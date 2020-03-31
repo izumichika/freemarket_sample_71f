@@ -48,19 +48,16 @@
                 .right1
                   = @item.user
                 .right2
-                  = @categories.name
-                  = @item.category.parent.name
-                  = @item.category.children.name
+                  = @category.root.name
+                  = @category.parent.name
+                  = @category.name
+                  -# = @category.children.name
                 .right3
                   = @item.brand
                 .right4
-                  -# = @shippinghash.name
-                  -# = @item.shipping_charges.(params[:id].name)
-                  -# = @item.shipping_charges
-                  -# = @shipping_charges.name
-                  -# = @shippinghash.name
+                  = @item.shipping_charges.shippinghash.name
                 .right5
-                  = @item.area
+                  -# = @item.aprefecture.name
                 .right6
                   = @item.days_to_ship   
             .tag
